@@ -1,8 +1,15 @@
 package com.imie.tp.calculator;
 
-public class Application {
+public final class Application {
 
-    public static void main(String[] args) {
+    private Application() { }
+
+    /**
+     * Main application entry point.
+     * @param args Arguments passed by the command line.
+     * @author Thierry
+     */
+    public static void main(final String[] args) {
 
         // Process...
         // Display & Ask "Type of Operation ":

@@ -2,7 +2,7 @@ package com.imie.tp.calculator.operation;
 /**
  *
  * @author Thierry
- * Additions a value to the baseValue.
+ * Adds a value to the baseValue.
  */
 public class AdditionOperation extends OperationCommandBase {
 
