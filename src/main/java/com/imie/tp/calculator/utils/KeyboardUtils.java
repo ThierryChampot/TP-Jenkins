@@ -2,11 +2,25 @@ package com.imie.tp.calculator.utils;
 
 import java.util.Scanner;
 
-public final class KeyboardUtils {
+/**
+ * The keyboard listener.
+ * @author Thierry
+ *
+ */
+final class KeyboardUtils {
 
+    /**
+     * Instantiated once as a singleton
+     */
     private static Scanner keyboard;
 
-    public static String readFromKeyboard(String displayAsk) {
+    /**
+     * Creates the keyboard listener.
+     * Displays a questions and reads what is answered.
+     * @param displayAsk The answer passed.
+     * @return Next question.
+     */
+    public static String readFromKeyboard(final String displayAsk) {
         keyboard = new Scanner(System.in);
 
         System.out.println(displayAsk);
@@ -15,6 +29,9 @@ public final class KeyboardUtils {
 
     }
 
+    /**
+     * The listener can be closed.
+     */
     public static void closeKeyboard() {
         keyboard.close();
     }

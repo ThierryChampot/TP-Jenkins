@@ -1,11 +1,18 @@
 package com.imie.tp.calculator;
 
+/**
+ * Main application entry point.
+ * @author Thierry
+ *
+ */
 public final class Application {
 
+    /**
+     * This application shall not be instanciated more than once.
+     */
     private Application() { }
 
     /**
-     * Main application entry point.
      * @param args Arguments passed by the command line.
      * @author Thierry
      */
