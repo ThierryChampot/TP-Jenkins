@@ -15,7 +15,7 @@ findbugs {
 
 pmd {
   ignoreFailures = true
-  pmdTest.enabled = false
+  // pmdTest.enabled = false
   ruleSets = [
             'java-basic',
             'java-braces',
