@@ -28,16 +28,7 @@ public final class Application {
         //               - 5 : Display History
         //               - 9 : Quit
         // TODO : array + foreach
-        KeyboardUtils prompt = new KeyboardUtils();
-        prompt.readFromKeyboard("Type of Operation ?");
-
-        System.out.println("1 : Addition");
-        System.out.println("2 : Subtraction");
-        System.out.println("3 : Diviside");
-        System.out.println("4 : Multiplication");
-        System.out.println("5 : Display History");
-        System.out.println("9 : Quit");
-
+        KeyboardUtils.readFromKeyboard("Type of Operation ?");
         // If enter 1
         // Display & Ask "Enter Value a : "
         // Display & Ask "Enter Value b : "
@@ -53,5 +44,4 @@ public final class Application {
 
         //TODO
     }
-
 }
