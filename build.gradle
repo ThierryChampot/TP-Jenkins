@@ -1,17 +1,17 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'findbugs'
+// apply plugin: 'findbugs'
 apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 
-findbugs {
-    toolVersion = "3.0.1"
-    reportsDir = file("$project.buildDir/reports/findbugs")
-    effort = "max"
-    reportLevel = "high"
-    findbugsTest.enabled = false
-}
+// findbugs {
+//    toolVersion = "3.0.1"
+//    reportsDir = file("$project.buildDir/reports/findbugs")
+//    effort = "max"
+//    reportLevel = "high"
+//    findbugsTest.enabled = false
+// }
 
 pmd {
   ignoreFailures = true
