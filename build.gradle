@@ -1,21 +1,26 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-// apply plugin: 'findbugs'
+apply plugin: 'findbugs'
 apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 
-// findbugs {
-//    toolVersion = "3.0.1"
-//    reportsDir = file("$project.buildDir/reports/findbugs")
-//    effort = "max"
-//    reportLevel = "high"
-//    findbugsTest.enabled = false
-// }
+findbugs {
+    toolVersion = "3.0.1"
+    sourceSets = [sourceSets.main]
+    ignoreFailures = true
+    reportsDir = file("$project.buildDir/reports/findbugs")
+    effort = "max"
+    showProgress = true
+    reportLevel = "high"
+    visitors = ["FindSqlInjection", "SwitchFallthrough"]
+    omitVisitors = ["FindNonShortCircuit"]
+    findbugsTest.enabled = false
+}
 
 pmd {
   ignoreFailures = true
-  // pmdTest.enabled = false
+  pmdTest.enabled = false
   ruleSets = [
             'java-basic',
             'java-braces',
