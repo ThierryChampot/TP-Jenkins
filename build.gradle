@@ -11,10 +11,7 @@ findbugs {
     ignoreFailures = true
     reportsDir = file("$project.buildDir/reports/findbugs")
     effort = "max"
-    showProgress = true
     reportLevel = "high"
-    visitors = ["FindSqlInjection", "SwitchFallthrough"]
-    omitVisitors = ["FindNonShortCircuit"]
     findbugsTest.enabled = false
 }
 
