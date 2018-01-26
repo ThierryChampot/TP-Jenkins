@@ -4,6 +4,7 @@ apply plugin: 'idea'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
 apply plugin: 'checkstyle'
+apply plugin: 'jdepend'
 
 findbugs {
     toolVersion = "3.0.1"
@@ -38,10 +39,16 @@ pmd {
             'java-unusedcode'
   ]
 }
+
 checkstyle {
     ignoreFailures = true
     checkstyleTest.enabled = false
 }
+
+jdepend {
+    jdependTest.enabled = false
+}
+
 
 repositories {
     mavenCentral()

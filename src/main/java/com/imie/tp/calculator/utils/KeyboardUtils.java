@@ -7,10 +7,10 @@ import java.util.Scanner;
  * @author Thierry
  *
  */
-final class KeyboardUtils {
+public final class KeyboardUtils {
 
     /**
-     * Instantiated once as a singleton
+     * Uses the the keyboard scanner.
      */
     private static Scanner keyboard;
 
